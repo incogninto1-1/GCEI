@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ "$EUID" -ne 0 ]
+	then echo "gcei-config needs to be executed as root in order to work"
+	exit
+fi
+echo "GCEI Configuration tool"
+mkdir /etc/gcei/
+touch /etc/gcei/repo.conf
+echo "192.168.1.104" >> /etc/gcei/repo.conf
+echo "GCEI configured succesfully. Enjoy your new package manager!"
