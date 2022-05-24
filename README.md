@@ -1,4 +1,4 @@
-# GCEI
+# GCEI (Grab it, Check it, Extract it, Install it)
 WIP Package manager (not licensed yet)
 This package manager is a DEMO therefore it will not install ant programs (yet).
 I initally made this package manager to save time installing packages on Gentoo
