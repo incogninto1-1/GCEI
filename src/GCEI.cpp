@@ -8,7 +8,7 @@ int main() {
 	rev=0;
 	pnt=1;
 	cout<<"GCEI (Grab it, Check it, Extract it, Install it) Version "<<rev<<"."<<pnt<<endl<<"Copyleft 2022 8X Computing Squad"<<endl<<"No Rights Reserved"<<endl;
-	cout<<"Warning: This product is FREE DAMN SOFTWARE under GNU GPL 3.0."<<endl<<"Any redistributions of this product will be ignored "<<endl<<"For more info go to www.gnu.org/philosophy/free-sw.en.html"<<endl<<"1 for manual"<<endl;
+	cout<<"Warning: This product is FREE SOFTWARE under GNU GPL 3.0."<<endl<<"For more info go to www.gnu.org/philosophy/free-sw.en.html"<<endl<<"1 for manual"<<endl;
 	rep.open("/etc/gcei/repo.conf");
 	if (!rep){
 		cerr << "Cannot read /etc/gcei/repo.conf"<<endl<< "Troubleshoot: Are you running GCEI as a superuser?"<<endl<<"If yes have you ran gcei-conf?"<<endl;
