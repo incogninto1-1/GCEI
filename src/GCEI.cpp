@@ -16,11 +16,13 @@ int main() {
 	}
 	while(true){
 		cout<<"GCEI>";
+		cin.ignore(9999);
 		cin>>com;
-		if(com==1){
-			cout<<"GCEI (Grab it, Check it, Extract it, Install it) user manual"<<endl<<"1=manual"<<endl<<"2=install package"<<endl<<"3=remove package"<<endl<<"4=refresh"<<endl<<"5=list package adresses"<<endl<<"6=quit"<<endl;
-		}
-		if(com==2){
+		switch(com){
+			case 1:
+				cout<<"GCEI (Grab it, Check it, Extract it, Install it) user manual"<<endl<<"1=manual"<<endl<<"2=install package"<<endl<<"3=remove package"<<endl<<"4=refresh"<<endl<<"5=list package adresses"<<endl<<"6=quit"<<endl;
+				break;
+			case 2:
 			cout<<"Now enter the package address"<<endl;
 			cin>>pak;
 			if(pak<=255){
@@ -36,13 +38,14 @@ int main() {
 			}
 			else
 				cout<<"Package not available!"<<endl;
-		}
-		if(com==6){
-			cout<<"Goodbye!"<<endl;
-			return 0;
-		}
-		else{
-			cout<<"Wut?"<<endl;
+				break;
+			case 6:
+				cout<<"Goodbye!"<<endl;
+				return 0;
+				break;
+			default:
+				cout<<"Wut?"<<endl;
+				break;
 		}
 	}
 	return 0;
